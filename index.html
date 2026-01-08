@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TypeScript Dessert Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>TypeScript-Dessert-Shop</h1>
+  <div class="cart-counter">
+    🛒 <span id="cartCount">0</span>
+  </div>
+</header>
+
+<main class="container">
+  <section id="dessert-list" class="grid"></section>
+
+  <aside class="cart" id="cart">
+    <h2>Your Cart (<span id="cartItems">0</span>)</h2>
+    <div id="cartList"></div>
+
+    <div class="total">
+      <strong>Order Total:</strong>
+      <span id="totalPrice">$0.00</span>
+    </div>
+
+    <button class="confirm-btn" onclick="confirmOrder()">
+      Confirm Order
+    </button>
+  </aside>
+</main>
+
+<script src="cartmanage.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
